@@ -23,36 +23,35 @@ import {
 // Animation variants
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.4, 0, 0.2, 1] } },
-};
+  visible: { opacity: 1, y: 0 },
+} as const;
 
 const fadeInLeft = {
   hidden: { opacity: 0, x: -40 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: [0.4, 0, 0.2, 1] } },
-};
+  visible: { opacity: 1, x: 0 },
+} as const;
 
 const fadeInRight = {
   hidden: { opacity: 0, x: 40 },
-  visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: [0.4, 0, 0.2, 1] } },
-};
+  visible: { opacity: 1, x: 0 },
+} as const;
 
 const staggerContainer = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.15, delayChildren: 0.2 },
   },
-};
+} as const;
 
 const scaleIn = {
   hidden: { opacity: 0, scale: 0.8 },
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.6, ease: [0.4, 0, 0.2, 1] } },
-};
+  visible: { opacity: 1, scale: 1 },
+} as const;
 
 const floatAnimation = {
   y: [0, -10, 0],
   transition: { duration: 3, repeat: Infinity, ease: "easeInOut" },
-};
+} as const;
 
 // Menu items
 const menuItems = [
